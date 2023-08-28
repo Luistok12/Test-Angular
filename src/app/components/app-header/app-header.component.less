@@ -1,0 +1,37 @@
+@import '../../../styles/variables_globales.less';
+
+header {
+    display: flex;
+    background-color: @bg-100;
+    color: @text-100;
+    align-items: center;
+
+    img {
+        margin-left: 20px;
+        height: 120px;
+    }
+
+    nav {
+        flex:1;
+
+        .menu {
+            list-style: none;
+            display: flex;
+            justify-content: flex-end;
+            margin-right: 20px;
+
+            li {
+                border-radius: 10px;
+                background-color: @bg-200;
+                margin: 3px;
+                list-style: none;
+                padding: 10px;
+                cursor: pointer;
+
+                .submenu {
+                    display: none;
+                }
+            }
+        }
+    }
+}
