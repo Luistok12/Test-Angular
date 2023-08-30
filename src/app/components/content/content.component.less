@@ -1,0 +1,60 @@
+@import '../../../styles/variables_globales.less';
+
+main {
+    background-color: @bg-100;
+    padding: 20px;
+
+    .content-container {
+        display: grid;
+        grid-template-areas:
+            "article article article"
+            "article article article"
+            "article article article";
+        gap: 20px;
+
+        article {
+            grid-area: 'article';
+            background-color: @bg-200;
+            border-radius: 10px;
+            display: grid;
+            place-items: center;
+            cursor: pointer;
+
+            &:hover {
+                background-color: @bg-300;
+            }
+
+            h2 {
+                color: @text-100;
+                margin: 5px;
+            }
+
+            img {
+                height: 150px;
+                margin: 5px;
+            }
+
+            p {
+                color: @text-200;
+                margin: 10px;
+            }
+        }
+    }
+}
+
+@media (max-width: @medium-screen){
+    main{
+        .content-container{
+            grid-template-areas: 
+                "article"
+                "article"
+                "article"
+                "article"
+                "article"
+                "article"
+                "article"
+                "article"
+                "article";
+        }
+    }
+}

@@ -12,7 +12,11 @@ header {
     }
 
     nav {
-        flex:1;
+        flex: 1;
+
+        .icon-menu {
+            display: none;
+        }
 
         .menu {
             list-style: none;
@@ -30,12 +34,52 @@ header {
 
                 &:hover {
                     background-color: @primary-100;
+
+                    .submenu {
+                        display: block;
+                        position: absolute;
+                        bottom: -20;
+
+                    }
                 }
 
                 .submenu {
                     display: none;
                 }
 
+            }
+        }
+    }
+}
+
+@media (max-width: @medium-screen) {
+
+    header {
+        img {
+            height: 90px;
+        }
+        nav {
+            .icon-menu {
+                display: flex;
+                flex-direction: column;
+                background-color: @bg-200;
+                border-radius: 10px;
+                padding: 5px;
+                cursor: pointer;
+                position: absolute;
+                top: 25px;
+                right: 20px;
+
+                span {
+                    height: 3px;
+                    width: 30px;
+                    margin: 3px;
+                    background-color: @text-100;
+                }
+            }
+
+            .menu {
+                display: none;
             }
         }
     }

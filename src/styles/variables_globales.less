@@ -1,16 +1,16 @@
 // Paleta de colores
 
-@primary-100:#FF0000;
-@primary-200:#ff5a36;
-@primary-300:#ffc993;
-@accent-100:#800000;
-@accent-200:#ff9e81;
-@text-100:#FFFFFF;
-@text-200:#e0e0e0;
-@bg-100:#000000;
-@bg-200:#161616;
-@bg-300:#2c2c2c;
-  
+@primary-100: #FF0000;
+@primary-200: #ff5a36;
+@primary-300: #ffc993;
+@accent-100: #800000;
+@accent-200: #ff9e81;
+@text-100: #FFFFFF;
+@text-200: #e0e0e0;
+@bg-100: #000000;
+@bg-200: #161616;
+@bg-300: #2c2c2c;
+
 
 // Breakpoints
 
@@ -19,5 +19,53 @@
 @large-screen: 992px;
 @xlarge-screen: 1200px;
 
+/* Estilos del mouse scroller */
+::-webkit-scrollbar {
+    width: 10px;
+    /* Ancho del scroller */
+}
 
-  
+::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+    /* Color del fondo del track */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #888;
+    /* Color del thumb (la barra de desplazamiento) */
+    // border-radius: 5px;
+    /* Borde redondeado del thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+    /* Color del thumb cuando el mouse pasa sobre él */
+}
+
+
+
+/* Estilos básicos del mouse scroller */
+/* Estos estilos funcionarán en varios navegadores, pero no admiten personalización avanzada */
+
+// /* Ancho de la barra de desplazamiento */
+// body {
+//     scrollbar-width: thin;
+//     /* Ancho fino */
+// }
+
+// /* Color de fondo del track */
+// body {
+//     scrollbar-color: #f1f1f1 transparent;
+//     /* Color del track y thumb (transparente) */
+// }
+
+// /* Estilo del thumb (barra de desplazamiento) */
+// body::-webkit-scrollbar-thumb {
+//     background-color: #888;
+//     border-radius: 5px;
+// }
+
+// /* Estilo del thumb en estado hover */
+// body::-webkit-scrollbar-thumb:hover {
+//     background-color: #555;
+// }
