@@ -3,6 +3,8 @@
 .main-container {
     display: flex;
     background-color: @bg-100;
+    border-top: 1px solid @text-100;
+    border-bottom: 1px solid @text-100;
 
     app-sidebar{
         flex:1;
@@ -12,3 +14,10 @@
     }
 }
 
+@media (max-width: @medium-screen){
+    .main-container{
+        app-sidebar {
+            display: none;
+        }
+    }
+}
