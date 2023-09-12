@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./ejemplo4.component.less']
 })
 export class Ejemplo4Component {
+  array = ["elemento 1", "elemento 2", "elemento 3"];
 
+  
 }

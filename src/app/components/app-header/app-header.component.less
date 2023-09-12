@@ -5,7 +5,7 @@ header {
     background-color: @bg-100;
     color: @text-100;
     align-items: center;
-    
+
     img {
         margin-left: 20px;
         height: 120px;
@@ -35,12 +35,21 @@ header {
                 &:hover {
                     background-color: @primary-100;
 
+                    a {
+                        color: @text-200;
+                    }
+
                     .submenu {
                         display: block;
                         position: absolute;
                         bottom: -20;
 
                     }
+                }
+
+                a{
+                    text-decoration: none;
+                    color: @text-100;
                 }
 
                 .submenu {
@@ -58,6 +67,7 @@ header {
         img {
             height: 90px;
         }
+
         nav {
             .icon-menu {
                 display: flex;

@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./ejemplo1.component.less']
 })
 export class Ejemplo1Component {
+  numero1 = 6; 
+  numero2 = 6;
+  resultado = this.numero1 + this.numero2;
 
 }

@@ -11,7 +11,17 @@
 
 <app-header />
 <div class="main-container">
-    <app-sidebar />
-    <app-content />
+    <div class="sidebar">
+        <app-sidebar />
+    </div>
+    <div class="content">
+        <router-outlet /><br>
+        <p>Para que en una lista los elementos no peguen un salto de linea colocamos [(white-space: nowrap;)en ul] y [( display: inline;)en li]</p>
+    </div>
 </div>
 <app-footer />
+
+<!-- Agregue divs dentro del main-container para podes organizar mejor sus 2 componentes -->
+<!-- Si hay algun problema por equivocacion de generacion de componente y lo queres eliminar normalmente
+por ej un sup (suprimir), al darle sup para eliminar el componente debemos modifical el app module
+y borrar las 2 lineas (Declaracion e importacion) de ese componente eliminado. -->

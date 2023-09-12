@@ -1,0 +1,55 @@
+@import '../../../../styles.less';
+
+section {
+    display: grid;
+    place-items: center;
+    color: @text-100;
+
+    .contador-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        button {
+            padding: 15px;
+            margin: 10px;
+            color: #fff;
+            font-weight: bolder;
+            cursor: pointer;
+        }
+
+        .button-dec {
+            background-color: red;
+
+            &:hover{
+                background-color: rgb(253, 95, 95);
+            }
+        }
+
+        .button-inc {
+            background-color: green;
+
+            &:hover {
+                background-color: rgb(62, 245, 62);
+            }
+        }
+
+        input {
+            width: 5%;
+            padding: 10px;
+            text-align: center;
+            // outline: none;
+            border: none;
+            background-color: transparent;
+            color: #fff;
+        }
+        
+    }
+
+    ul {
+        white-space: nowrap;
+        li {
+            margin-left: 7%;
+        }
+    }
+}

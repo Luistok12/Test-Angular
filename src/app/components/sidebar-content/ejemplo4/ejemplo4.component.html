@@ -1,1 +1,18 @@
-<p>ejemplo4 works!</p>
+<section>
+    <p>Probando mostrar un array con *ngFor</p>
+    <br>
+    <ul>
+        <li *ngFor="let elemento of array">{{elemento}}</li>
+    </ul>
+    <br><br>
+    <p>Para usar estas directivas, debemos usar ng-container para asi tener el codigo mas limpio</p>
+    <br>
+    <p>Ahora uso la directiva *ngIf para poner condiciones para mostrar algun elemento</p>
+    <ul>
+        <li *ngFor="let elemento of array">
+            <ng-container *ngIf="elemento === 'elemento 1' || elemento === 'elemento 3'">
+                {{elemento}}
+            </ng-container>
+        </li>
+    </ul>
+</section>

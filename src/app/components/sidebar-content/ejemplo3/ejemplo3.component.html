@@ -1,1 +1,19 @@
-<p>ejemplo3 works!</p>
+<section>
+    <p>Prueba de contenido:</p>
+    <br>
+    <div class="contador-container">
+        <button (click)="decrementar()" class="button-dec">-</button>
+        <input [(ngModel)]="contador" type="text">
+        <button (click)="incrementar()" class="button-inc">+</button>
+    </div>
+    <br>
+    <p>Para el maquetado de los botones utilice un container para los botones</p>
+    <br><br>
+    <p class="note">Para usar el [(ngModel)] se debe importar lo siguiente en el module ts</p>
+    <br>
+    <ul>
+        <li>import FormsModule* from '@angular/forms'; // Importa FormsModule</li>
+        <li>FormsModule // Agrega FormsModule a la lista de imports</li>
+        <!-- {FormsModule} -->
+    </ul>
+</section>

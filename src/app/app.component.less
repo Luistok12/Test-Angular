@@ -5,12 +5,25 @@
     background-color: @bg-100;
     border-top: 1px solid @text-100;
     border-bottom: 1px solid @text-100;
+    min-height: 80vh;
 
-    app-sidebar{
+    .sidebar{
         flex:1;
+        // min-width: 20%;
+        // border:1px solid #fff;  
     }
-    app-content{
+
+    // El router-outlet NUNCA se toca!!! Siempre hay que colocar divs a la hora de colocar flex
+    .content {
         flex:4;
+        margin:20px;
+        // border: 1px solid #fff;
+
+        p{
+            color: @text-100;
+            text-align: center;
+            white-space: nowrap;
+        }
     }
 }
 
